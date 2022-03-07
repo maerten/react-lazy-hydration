@@ -171,7 +171,7 @@ function LazyHydrate(props: Props) {
       return children;
     }
     return (
-      <WrapperElement ref={childRef} style={{ display: "contents" }} {...rest}>
+      <WrapperElement ref={childRef} {...rest}>
         {children}
       </WrapperElement>
     );
