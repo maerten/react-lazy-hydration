@@ -38,6 +38,7 @@
     "prebuild": "rimraf dist types",
     "build": "rollup -c",
     "postbuild": "tsc",
+    "prepare": "npm run build",
     "prepublishOnly": "yarn build",
     "lint": "eslint src/** --fix"
   },
